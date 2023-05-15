@@ -1,0 +1,59 @@
+footer {
+    background-color: #448dc0;
+    color: #ffffff;
+}
+
+.footer-end {
+
+    margin: 0 auto;
+    padding: 24px;
+    font-style: inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-1 h3 {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.contact-1 p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact-1 p {
+    margin: 0px;
+}
+
+.contact-text {
+    margin: 18px 0px;
+}
+
+.contact-2 {
+    text-align: right;
+}
+
+.contact-2 p {
+    margin: 0px;
+}
+
+.contact-2 p a {
+    color: #ffffff;
+}
+
+.contact-icon {
+    font-size: 18px;
+}
+
+.contact-icon i {
+    border: 1px solid #ffffff;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 18px;
+    background-color: #ffffff;
+    color: black;
+    margin-top: 36px;
+    margin-right: 5px;
+}

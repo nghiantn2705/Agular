@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Users } from './common/users';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'nghiantph27510';
+  users : Users={
+    name:'Nghia Ngo',
+    age:20,
+    address: "Viet Nam"
+  }
 }
