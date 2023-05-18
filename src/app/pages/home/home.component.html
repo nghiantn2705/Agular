@@ -11,11 +11,13 @@
             <button   (click)="toggleDescription(product)" class="btn btn-secondary">
              Mô tả
             </button>
+           
             <div>
 
               <p *ngIf="product.isDescriptionVisible" class="card-text">
                 {{ product.description }}
               </p>
+              
             </div>
           </div>
         </div>
