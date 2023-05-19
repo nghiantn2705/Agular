@@ -1,0 +1,22 @@
+{
+  "productList": [
+    {
+      "name": "truong",
+      "price": "truong",
+      "imgUrl": "truong",
+      "desc": "truong",
+      "category": "Fruits",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
