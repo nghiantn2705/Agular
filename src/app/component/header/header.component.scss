@@ -1,60 +1,148 @@
-header {
-    margin: 0 auto;
-}
 
-/* .background{
-background-color: #333333;
-color: #333333;
-position: absolute;
-left: 0;
-right: 0;
-z-index: 1;
-width: 100%;
-} */
-.background-header {
-    background: url("https://ac-landing-pages-user-uploads-production.s3.amazonaws.com/0000056772/099d39e6-222d-4c39-9a04-127ba9aebb1e.jpg");
-    background-position-x: center;
-    background-position-y: bottom;
-    background-size: cover;
+
+  /**tìm kiếm**/
+.search-card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 50px;
+    }
+.search-card2{
+        margin-right: 20px;
+    }
+.search-input button {
+  
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+
+    background-color: white;
     background-repeat: no-repeat;
-    margin: 0 auto;
-    padding: 50px 100px 100px 100px;
-    opacity: 1;
+    background-position: center;
+    background-size: contain;
+    border:  1px solid gray;
+    cursor: pointer;
+    padding-left: 8px;
+    
+  }
+.search-input {
+    position: relative;
+    display: inline-block;
+  }
+.card{
+    color: #000;
+    background-color: white;
+    border: 1px solid white;   
 }
-
-#img-logo {
-    width: 50px;
-    border-radius: 5px;
+.card i{
+    font-size: 30px
 }
-
-.header-content {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.content {
-    color: white;
+ /**tìm kiếm**/
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+header{
     display: flex;
-    flex-direction: column;
-    font-weight: bold;
-
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   border-bottom: 1px solid #ccc;
+    
 }
-
-.container-1 {
-    padding: 30px;
-    color: black;
-    text-align: center;
-    max-width: 1100px;
-    margin: 0 auto;
+/**menu**/
+.menu-me{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    text-transform: uppercase;
+    font-weight: 700 !important;
 }
+.menu {
+    display: flex;
+    justify-content: space-between; /* căn đều các phần tử */
+    align-items: center; /* căn giữa theo chiều dọc */
+    list-style-type: none; /* loại bỏ dấu chấm */
+    margin-top: 10px;
+  }
 
-.container-1 .title-first h2 {
-    color: rgb(33, 33, 165);
-    font-weight: bold;
-    font-size: 32px;
-}
+  .menu li {
+    position: relative; /* tạo không gian cho menu con */
+  }
 
-.container-1 .title-first h3 {
-    color: rgb(90, 155, 200);
-    font-weight: bold;
-}
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    font-size: 17px;
+  }
+  .menu li {
+    /* đường kẻ mặc định */
+  }
+  
+  .menu li:hover {
+    border-bottom: 2px solid #333; /* đường kẻ đậm khi hover */
+  }
+  .menu li ul {
+    display: none; /* ẩn menu con ban đầu */
+    position: absolute; /* căn chỉnh vị trí menu con */
+    top: 100%; /* đặt vị trí dưới menu chính */
+    left: 0;
+   border: 1px solid gray;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* loại bỏ dấu chấm */
+  }
+
+  .menu li:hover ul {
+    display: flex; /* hiển thị menu con khi hover */
+    flex-direction: row; /* căn chỉnh menu con ngang */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .menu li ul li {
+    padding: 10px;
+  }
+  /**menu**/
+  .banner img{
+    margin-top: 20px;
+  }
+  .banner {
+   
+   max-width: 90%;
+    height: 400px; /* Điều chỉnh chiều cao theo ý muốn */
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: auto;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fade 5s ease infinite;
+  }
+  
+ 
+  
+  .slide:nth-child(2) {
+    animation-delay: 5s; /* Điều chỉnh khoảng thời gian chuyển ảnh (s) */
+  }
+  
+  .slide:nth-child(3) {
+    animation-delay: 7s; /* Điều chỉnh khoảng thời gian chuyển ảnh (s) */
+  }
+  
+  @keyframes fade {
+    0% { opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  

@@ -8,6 +8,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { ServiceComponent } from './pages/service/service.component';
 import { CategoryComponent } from './pages/category/category.component';
+
+
 import { AddComponent } from './admin/add/add.component';
 import { AdminComponent } from './admin/admin/admin.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -44,6 +46,7 @@ import {MatTableModule} from '@angular/material/table';
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     BrowserAnimationsModule,
     MatIconModule,
     MatToolbarModule,

@@ -11,6 +11,7 @@ export class AddComponent {
   productForm !: FormGroup;
   titleBtn:string = "Add"
   actionBtn: string = "Save"
+  actionBtn1: string = "add"
   constructor(private FormBuilder: FormBuilder,
     private api: ApiService,
     @Inject(MAT_DIALOG_DATA) public editData: any,
@@ -29,6 +30,7 @@ export class AddComponent {
     if (this.editData) {
       this.titleBtn = "Update"
       this.actionBtn = "Update";
+      this.actionBtn1 = "update";
       this.productForm.controls['name'].setValue(this.editData.name);
       this.productForm.controls['price'].setValue(this.editData.price);
       this.productForm.controls['desc'].setValue(this.editData.desc);
