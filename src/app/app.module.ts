@@ -26,6 +26,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatTableModule} from '@angular/material/table';
+import { LayoutAdminComponent } from './Layout/layout-admin/layout-admin.component';
+import { HeaderAdminComponent } from './component/header-admin/header-admin.component';
+import { LayoutClientComponent } from './Layout/layout-client/layout-client.component';
+
+
 // import { LoginComponent } from './pages/login/login.component';
 // import { NotFoundComponent } from './pages/not-found/not-found.component';
 // import { RegisterComponent } from './pages/register/register.component';
@@ -40,6 +45,11 @@ import {MatTableModule} from '@angular/material/table';
     CategoryComponent,
     AddComponent,
     AdminComponent,
+    LayoutAdminComponent,
+    HeaderAdminComponent,
+    LayoutClientComponent,
+
+
 
    
   ],
