@@ -1,18 +1,15 @@
-.container{
-    max-width: 80%;
-  margin: 0 auto;
-  margin-bottom: 100px;
-}
+
 h1{
     margin-top: 30px;
     text-align: center;
 }
 .img-thuonghieu {
-    display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 60px;
-    width: 100px;
-    height: 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+
+    
 
 }
 .img-thuonghieu img{
@@ -28,6 +25,9 @@ h1{
 .th-1{
    
     text-align: center;
+}
+.container{
+    margin-bottom: 200px;
 }
 
 
