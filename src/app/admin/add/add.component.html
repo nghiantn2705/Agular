@@ -1,9 +1,9 @@
-<h1 mat-dialog-title>Add Product Form</h1>
+<h1 mat-dialog-title>{{titleBtn}} Product Form</h1>
 <div mat-dialog-content>
    <form   [formGroup]="productForm">
     <mat-form-field appearance="outline">
         <mat-label >Product Name</mat-label>
-        <input formControlName="name" matInput placeholder="Name ">
+        <input formControlName="name" matInput placeholder="Name">
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label >Product Price</mat-label>

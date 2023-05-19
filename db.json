@@ -1,9 +1,9 @@
 {
   "productList": [
     {
-      "name": "truong",
+      "name": "truong1234",
       "price": "truong",
-      "imgUrl": "truong",
+      "imgUrl": "https://i2-prod.mirror.co.uk/incoming/article25609268.ece/ALTERNATES/s338a/0_PUSS-IN-BOOTS.jpg",
       "desc": "truong",
       "category": "Fruits",
       "id": 4
@@ -11,10 +11,26 @@
     {
       "name": "truong123455",
       "price": 123,
-      "imgUrl": "213123asd",
+      "imgUrl": "https://cdn-prd.content.metamorphosis.com/wp-content/uploads/sites/6/2022/12/shutterstock_321007070-1.jpg",
       "desc": "dấdasd",
       "category": "Fruits",
       "id": 5
+    },
+    {
+      "name": "truong",
+      "price": "2345",
+      "imgUrl": "https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80",
+      "desc": "sadasd",
+      "category": "Fruits",
+      "id": 6
+    },
+    {
+      "name": "truong",
+      "price": "1234",
+      "imgUrl": "https://cdn-prd.content.metamorphosis.com/wp-content/uploads/sites/6/2022/12/shutterstock_781327003-1.jpg",
+      "desc": "truong",
+      "category": "Fruits",
+      "id": 7
     }
   ],
   "comments": [

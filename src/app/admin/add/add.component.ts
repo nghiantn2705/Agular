@@ -9,6 +9,7 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class AddComponent {
   productForm !: FormGroup;
+  titleBtn:string = "Add"
   actionBtn: string = "Save"
   constructor(private FormBuilder: FormBuilder,
     private api: ApiService,
@@ -26,6 +27,7 @@ export class AddComponent {
 
     console.log(this.editData);
     if (this.editData) {
+      this.titleBtn = "Update"
       this.actionBtn = "Update";
       this.productForm.controls['name'].setValue(this.editData.name);
       this.productForm.controls['price'].setValue(this.editData.price);
