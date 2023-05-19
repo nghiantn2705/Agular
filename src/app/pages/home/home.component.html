@@ -1,29 +1,51 @@
-<section id="home-section">
-  <div class="container  p-5">
-    <div class=" d-flex justify-content-center" >
-      <div class="card-body text-center"  *ngFor="let product of products">
-        <div class="card "  style="width: 300px">
-          <div class="card-body ">
-            <img src="{{ product.imgUrl }}" alt="" style="width: 250px" class="card-img-top" />
-            <h5 class="card-title">{{ product.name }}</h5>
-            <p class="card-text">Giá: {{ product.price }}</p>
-            <!-- pipes -->
-            <button   (click)="toggleDescription(product)" class="btn btn-secondary">
-             Mô tả
-            </button>
-           
-            <div>
-
-              <p *ngIf="product.isDescriptionVisible" class="card-text">
-                {{ product.description }}
-              </p>
-              
-            </div>
-          </div>
-        </div>
-
-      </div>
-     
+<div class="container">
+  <h1>Thương Hiệu</h1>
+  <div class="img-thuonghieu">
+   
+    <div class="th-1">
+      <a href=""><img src="https://admin.thegioigiay.com/upload/manufacturer/806467265_adidas-vn.jpg" alt=""></a>
+      <p>adidas</p>
     </div>
+    
+    <div class="th-1">
+    <a href=""><img src="https://admin.thegioigiay.com/upload/manufacturer/197996652_logo-nike.jpg" alt=""></a>
+    <p>nike</p>
   </div>
-</section>
+
+    <div class="th-1">
+    <a href=""><img src="https://admin.thegioigiay.com/upload/manufacturer/208507600_logo-burberry.jpg" alt=""></a>
+    <p>burberry</p>
+  </div>
+   
+    <div class="th-1">
+    <a href=""><img src="https://admin.thegioigiay.com/upload/manufacturer/1872661884_logo-ysl.jpg" alt=""></a>
+    <p>ysl</p>
+  </div>
+ 
+    <div class="th-1">
+    <a href=""><img src="https://admin.thegioigiay.com/upload/manufacturer/1935627539_1960s_Gucci_Logo.svg.png" alt=""></a>
+    <p>gucci</p>
+      </div>
+
+    <div class="th-1">
+    <a href=""><img src="https://admin.thegioigiay.com/upload/manufacturer/450658152_Celine-logo.png" alt=""></a>
+    <p>celine</p>
+  </div>
+    <div class="th-1">
+    <a href=""><img src="https://admin.thegioigiay.com/upload/manufacturer/1872661884_dior-logo.png" alt=""></a>
+    <p>dior</p>
+  </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
