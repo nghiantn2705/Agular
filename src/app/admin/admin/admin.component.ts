@@ -58,16 +58,22 @@ export class AdminComponent implements OnInit {
     })
   }
 
+  
   deleteProduct(id: number) {
-    this.api.deleteProduct(id)
+    if(confirm("Are you really ?") == true){
+      this.api.deleteProduct(id)
       .subscribe({
         next: (res) => {
+         
           alert("Product Delete Succesfully");
           this.getAllProduct();
+         
         }, error: () => {
           alert("Error while deleting the secord!...")
         }
       })
+    }
+   
   }
 
   applyFilter(event: Event) {

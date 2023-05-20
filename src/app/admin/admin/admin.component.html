@@ -1,4 +1,4 @@
-<p>
+<p class="hero">
     <mat-toolbar color="primary">
         <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
             <mat-icon>menu</mat-icon>
@@ -53,8 +53,8 @@
                         <button mat-icon-button (click)="updateProduct(row)" color="primary">
                             <mat-icon>edit</mat-icon>
                         </button>
-                        <button (click)="deleteProduct(row.id)" mat-icon-button color="warn">
-                            <mat-icon>delete</mat-icon>
+                        <button  (click)="deleteProduct(row.id) " mat-icon-button color="warn" >
+                            <mat-icon >delete</mat-icon>
                         </button>
                     </td>
                 </ng-container>
