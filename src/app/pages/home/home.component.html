@@ -39,13 +39,55 @@
   
 </div>
 
+<section id="home-section">
+  <div class="container">
+    <div>
+      <h1>LỰA CHỌN SẢN PHẨM BẠN THÍCH</h1>
+      <div class="col-1">
+        <div class="card-like">
+          <div class="giay">
+            <a href="">
+              <img src="https://cdn.shopify.com/s/files/1/0456/5070/6581/files/FD2640-010-2_1080x.jpg?v=1682421264" alt="">
+              <div class="vongngoai">
+                <p>giày nam --></p>
+              </div>
+            </a>
+          </div>
+        
+          <div class="giay">
+          
+            <a href="">
+              <img src="https://bizweb.dktcdn.net/100/446/974/files/giay-mlb-chunky-liner-mid-classic-monogram-boston-red-sox-l-beige-3asxlm13n-43bgl-10.jpg?v=1675447793990" alt="">
+              <div class="vongngoai">
+                <p>giày nữ --></p>
+              </div>
+           
+            </a>
 
-
-
-
-
-
-
-
-
-
+          </div>
+         
+        </div>
+       
+      </div>
+    </div>
+    <h1>  GIÀY NAM</h1>
+  
+    <div class="row">
+      <div class="col-3" *ngFor="let product of products">
+        <div class="card">
+       
+          <div class="card-img-wrapper">
+            <img src="{{ product.imgUrl }}" alt="" class="card-img-top" />
+            <div class="card-price-overlay">
+              <h6 class="card-price">{{ product.price }}</h6>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-title">nike</p>
+            <p class="card-name">{{ product.name }} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
