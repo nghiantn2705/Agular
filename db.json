@@ -2,11 +2,11 @@
   "productList": [
     {
       "name": "truong",
-      "price": "truong",
-      "imgUrl": "truong",
+      "price": "1234",
+      "imgUrl": "https://cdn-prd.content.metamorphosis.com/wp-content/uploads/sites/6/2022/12/shutterstock_781327003-1.jpg",
       "desc": "truong",
       "category": "Fruits",
-      "id": 4
+      "id": 7
     }
   ],
   "comments": [
