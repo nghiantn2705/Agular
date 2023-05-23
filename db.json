@@ -7,6 +7,14 @@
       "desc": "truong",
       "category": "Fruits",
       "id": 7
+    },
+    {
+      "name": "Truong",
+      "price": "567651815",
+      "imgUrl": "https://picsum.photos/200",
+      "desc": "Good",
+      "category": "Vegetables",
+      "id": 8
     }
   ],
   "comments": [
