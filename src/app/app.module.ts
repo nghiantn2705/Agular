@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { ServiceComponent } from './pages/service/service.component';
 import { CategoryComponent } from './pages/category/category.component';
 
 
@@ -29,7 +28,14 @@ import {MatTableModule} from '@angular/material/table';
 import { LayoutAdminComponent } from './Layout/layout-admin/layout-admin.component';
 import { HeaderAdminComponent } from './component/header-admin/header-admin.component';
 import { LayoutClientComponent } from './Layout/layout-client/layout-client.component';
+<<<<<<< HEAD
 import { NgConfirmModule } from 'ng-confirm-box';
+=======
+import { DeitalProductComponent } from './pages/deital-product/deital-product.component';
+
+import { MatBadgeModule } from '@angular/material/badge';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+>>>>>>> bddcd824843717cae5b7f728017a74248ad1c926
 
 // import { LoginComponent } from './pages/login/login.component';
 // import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -41,13 +47,14 @@ import { NgConfirmModule } from 'ng-confirm-box';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ServiceComponent,
     CategoryComponent,
     AddComponent,
     AdminComponent,
     LayoutAdminComponent,
     HeaderAdminComponent,
     LayoutClientComponent,
+    DeitalProductComponent,
+    NotfoundComponent,
 
 
 
@@ -70,7 +77,11 @@ import { NgConfirmModule } from 'ng-confirm-box';
     HttpClientModule,
     MatPaginatorModule,
     MatTableModule,
+<<<<<<< HEAD
     NgConfirmModule
+=======
+    MatBadgeModule
+>>>>>>> bddcd824843717cae5b7f728017a74248ad1c926
   ],
   providers: [],
   bootstrap: [AppComponent]

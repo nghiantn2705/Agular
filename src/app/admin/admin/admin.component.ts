@@ -13,7 +13,7 @@ import { NgConfirmService } from 'ng-confirm-box';
 })
 export class AdminComponent implements OnInit {
 
-  displayedColumns: string[] = ['name', 'price', 'desc', 'imgUrl', 'category', 'action'];
+  displayedColumns: string[] = ['name', 'price', 'desc', 'imgUrl',"brand", 'category', 'action'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;

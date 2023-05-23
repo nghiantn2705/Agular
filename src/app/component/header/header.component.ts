@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
-
+import {MatBadgeModule} from '@angular/material/badge';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+  
+  }
 }
