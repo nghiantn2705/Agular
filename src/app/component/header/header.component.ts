@@ -6,5 +6,8 @@ import {MatBadgeModule} from '@angular/material/badge';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+  
+  }
 }

@@ -29,6 +29,7 @@ import {MatTableModule} from '@angular/material/table';
 import { LayoutAdminComponent } from './Layout/layout-admin/layout-admin.component';
 import { HeaderAdminComponent } from './component/header-admin/header-admin.component';
 import { LayoutClientComponent } from './Layout/layout-client/layout-client.component';
+import { DeitalProductComponent } from './pages/deital-product/deital-product.component';
 
 import { MatBadgeModule } from '@angular/material/badge';
 // import { LoginComponent } from './pages/login/login.component';
@@ -48,6 +49,7 @@ import { MatBadgeModule } from '@angular/material/badge';
     LayoutAdminComponent,
     HeaderAdminComponent,
     LayoutClientComponent,
+    DeitalProductComponent,
 
 
 
