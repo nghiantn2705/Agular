@@ -5,6 +5,7 @@ import { ApiService } from '../services/api.service';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
+import { NgConfirmService } from 'ng-confirm-box';
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
@@ -17,7 +18,7 @@ export class AdminComponent implements OnInit {
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
-  constructor(private add: MatDialog, private api: ApiService) {
+  constructor(private add: MatDialog, private api: ApiService, private confirmService:NgConfirmService) {
 
   }
   ngOnInit(): void {
@@ -60,7 +61,8 @@ export class AdminComponent implements OnInit {
 
   
   deleteProduct(id: number) {
-    if(confirm("Are you really ?") == true){
+    this.confirmService.showConfirm("Are You Really?",
+    ()=>{
       this.api.deleteProduct(id)
       .subscribe({
         next: (res) => {
@@ -72,7 +74,17 @@ export class AdminComponent implements OnInit {
           alert("Error while deleting the secord!...")
         }
       })
+    ,[]},
+    ()=>{
+      alert("User Click No")
     }
+    
+    
+    
+    )
+    // if(confirm("Are you really ?") == true){
+      
+    // }
    
   }
 

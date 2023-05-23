@@ -29,7 +29,7 @@ import {MatTableModule} from '@angular/material/table';
 import { LayoutAdminComponent } from './Layout/layout-admin/layout-admin.component';
 import { HeaderAdminComponent } from './component/header-admin/header-admin.component';
 import { LayoutClientComponent } from './Layout/layout-client/layout-client.component';
-
+import { NgConfirmModule } from 'ng-confirm-box';
 
 // import { LoginComponent } from './pages/login/login.component';
 // import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -69,7 +69,8 @@ import { LayoutClientComponent } from './Layout/layout-client/layout-client.comp
     FormsModule,
     HttpClientModule,
     MatPaginatorModule,
-    MatTableModule
+    MatTableModule,
+    NgConfirmModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,6 +7,9 @@ import { Users } from './common/users';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   users : Users={
     name:'Nghia Ngo',
     age:20,
