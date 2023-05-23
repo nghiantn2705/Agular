@@ -22,6 +22,7 @@ export class AddComponent {
       name: ['', Validators.required],
       price: ['', Validators.required],
       imgUrl: ['', Validators.required],
+      brand: ['', Validators.required],
       desc: ['', Validators.required],
       category: ['', Validators.required],
     });
@@ -35,6 +36,7 @@ export class AddComponent {
       this.productForm.controls['price'].setValue(this.editData.price);
       this.productForm.controls['desc'].setValue(this.editData.desc);
       this.productForm.controls['imgUrl'].setValue(this.editData.imgUrl);
+      this.productForm.controls['brand'].setValue(this.editData.brand);
       this.productForm.controls['category'].setValue(this.editData.category);
     }
 

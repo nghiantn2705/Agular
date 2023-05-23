@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { ServiceComponent } from './pages/service/service.component';
 import { CategoryComponent } from './pages/category/category.component';
 
 
@@ -32,6 +31,8 @@ import { LayoutClientComponent } from './Layout/layout-client/layout-client.comp
 import { DeitalProductComponent } from './pages/deital-product/deital-product.component';
 
 import { MatBadgeModule } from '@angular/material/badge';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+
 // import { LoginComponent } from './pages/login/login.component';
 // import { NotFoundComponent } from './pages/not-found/not-found.component';
 // import { RegisterComponent } from './pages/register/register.component';
@@ -42,7 +43,6 @@ import { MatBadgeModule } from '@angular/material/badge';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ServiceComponent,
     CategoryComponent,
     AddComponent,
     AdminComponent,
@@ -50,6 +50,7 @@ import { MatBadgeModule } from '@angular/material/badge';
     HeaderAdminComponent,
     LayoutClientComponent,
     DeitalProductComponent,
+    NotfoundComponent,
 
 
 
