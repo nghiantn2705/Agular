@@ -68,7 +68,7 @@
     </div>
   </div>
     <hr>
-    <h1>Nhận xét</h1>
+    <h1 class="tieude">Nhận xét</h1>
     <button (click)="toggleComments()" class="toggle-comments">Hiển thị/Ẩn bình luận</button>
 
     <div class="comments" [ngClass]="{'show': showComments}">
@@ -91,7 +91,7 @@
  
 
    <hr>
-   <h1>sản phẩm đề xuất</h1>
+   <h1 class="tieude"> sản phẩm đề xuất</h1>
     <div class="row">
       <div class="col-3" *ngFor="let product of products">
         <div class="card">

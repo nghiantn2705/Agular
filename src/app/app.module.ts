@@ -31,7 +31,7 @@ import { HeaderAdminComponent } from './component/header-admin/header-admin.comp
 import { LayoutClientComponent } from './Layout/layout-client/layout-client.component';
 import { DeitalProductComponent } from './pages/deital-product/deital-product.component';
 
-
+import { MatBadgeModule } from '@angular/material/badge';
 // import { LoginComponent } from './pages/login/login.component';
 // import { NotFoundComponent } from './pages/not-found/not-found.component';
 // import { RegisterComponent } from './pages/register/register.component';
@@ -71,7 +71,8 @@ import { DeitalProductComponent } from './pages/deital-product/deital-product.co
     FormsModule,
     HttpClientModule,
     MatPaginatorModule,
-    MatTableModule
+    MatTableModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
