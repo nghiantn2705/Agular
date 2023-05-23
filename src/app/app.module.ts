@@ -30,7 +30,7 @@ import { LayoutAdminComponent } from './Layout/layout-admin/layout-admin.compone
 import { HeaderAdminComponent } from './component/header-admin/header-admin.component';
 import { LayoutClientComponent } from './Layout/layout-client/layout-client.component';
 
-
+import { MatBadgeModule } from '@angular/material/badge';
 // import { LoginComponent } from './pages/login/login.component';
 // import { NotFoundComponent } from './pages/not-found/not-found.component';
 // import { RegisterComponent } from './pages/register/register.component';
@@ -69,7 +69,8 @@ import { LayoutClientComponent } from './Layout/layout-client/layout-client.comp
     FormsModule,
     HttpClientModule,
     MatPaginatorModule,
-    MatTableModule
+    MatTableModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
