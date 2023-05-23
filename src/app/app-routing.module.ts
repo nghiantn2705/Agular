@@ -7,12 +7,14 @@ import { from } from 'rxjs';
 import { AdminComponent } from './admin/admin/admin.component';
 import { LayoutClientComponent } from './Layout/layout-client/layout-client.component';
 import { LayoutAdminComponent } from './Layout/layout-admin/layout-admin.component';
+import { DeitalProductComponent } from './pages/deital-product/deital-product.component';
 
 const routes: Routes = [
  {
   path:"", component:LayoutClientComponent,children: [
     {path:"",redirectTo:'home',pathMatch:'full'},
-    {path:'home',component:HomeComponent}
+    {path:'home',component:HomeComponent},
+    {path:'deital',component:DeitalProductComponent}
   ]
  },
  {
@@ -21,6 +23,7 @@ const routes: Routes = [
     {path:'admin',component:AdminComponent}
   ]
  }
+ 
 ];
 
 @NgModule({
