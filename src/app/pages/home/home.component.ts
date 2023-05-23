@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import products from 'src/app/datas/products';
+import { ServicepageService } from '../servicepages/servicepage.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +7,20 @@ import products from 'src/app/datas/products';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  products = products
-  toggleDescription(product: any) {
-    product.isDescriptionVisible = !product.isDescriptionVisible;
+  constructor(private api:ServicepageService ) {}
+  ngOnInit(): void {
+    this.getAllProduct();
+  }
+  products:any
+  getAllProduct() {
+    this.api.getProduct().subscribe({
+      next: (res) => {
+        this.products = res
+      },
+      error: () => {
+        alert('Error while fetching the Records!...');
+      },
+    });
   }
  
 }
