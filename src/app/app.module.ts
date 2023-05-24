@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { ServiceComponent } from './pages/service/service.component';
+
 import { CategoryComponent } from './pages/category/category.component';
 
 
@@ -29,6 +29,8 @@ import {MatTableModule} from '@angular/material/table';
 import { LayoutAdminComponent } from './Layout/layout-admin/layout-admin.component';
 import { HeaderAdminComponent } from './component/header-admin/header-admin.component';
 import { LayoutClientComponent } from './Layout/layout-client/layout-client.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 // import { LoginComponent } from './pages/login/login.component';
@@ -41,13 +43,15 @@ import { LayoutClientComponent } from './Layout/layout-client/layout-client.comp
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    ServiceComponent,
     CategoryComponent,
     AddComponent,
     AdminComponent,
     LayoutAdminComponent,
     HeaderAdminComponent,
     LayoutClientComponent,
+    RegisterComponent,
+    LoginComponent,
+ 
 
 
 

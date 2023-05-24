@@ -20,4 +20,5 @@ export class ApiService {
   deleteProduct(id:number){
     return this.http.delete<any>("http://localhost:3000/productList/"+id)
   }
+
 }

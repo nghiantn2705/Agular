@@ -7,6 +7,14 @@
       "desc": "truong",
       "category": "Fruits",
       "id": 4
+    },
+    {
+      "name": "tien",
+      "price": "6555",
+      "imgUrl": "đwqdwqd",
+      "desc": "ádasdas",
+      "category": "Electronic",
+      "id": 5
     }
   ],
   "comments": [
@@ -18,5 +26,17 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "users": [
+    {
+      "username": "truong",
+      "password": "truong", 
+      "id": 1
+    },
+    {
+      "username": "tien",
+      "password": "123456",
+      "id": 2
+    }
+  ]
 }
