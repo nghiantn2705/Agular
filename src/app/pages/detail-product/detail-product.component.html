@@ -1,0 +1,132 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+  />
+</head>
+<body>
+  <div class="container">
+    <!-- <div class="product-image">
+      <img src="https://admin.thegioigiay.com/upload/product/2023/05/giay-the-thao-nam-nike-air-jordan-1-retro-low-og-doernbecher-fd9665-351-phoi-mau-38-5-645eee8896f4d-13052023085728.jpg" alt="Product Image">
+    </div> -->
+    <div class="image-gallery">
+      <div class="main-image">
+        <img [src]="mainImage" alt="Main Image" />
+        <button (click)="previousImage()" class="back">
+          <span class="material-symbols-outlined"> arrow_back </span>
+        </button>
+        <button (click)="nextImage()" class="next">
+          <span class="material-symbols-outlined"> arrow_forward </span>
+        </button>
+      </div>
+      <div class="thumbnail-images">
+        <img
+          *ngFor="let thumbnail of thumbnails"
+          [src]="thumbnail"
+          alt="Thumbnail"
+          (click)="changeImage(thumbnail)"
+        />
+      </div>
+    </div>
+
+    <div class="product-details">
+      <p class="product-cate">nike</p>
+      <h1 class="product-title">
+        GIÀY THỂ THAO NAM NIKE AIR JORDAN 1 RETRO LOW OG DOERNBECHER FD9665-351
+        PHỐI MÀU-38.5
+      </h1>
+      <p class="dg-sao">Đánh giá:</p>
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5" />
+        <label for="star5"></label>
+        <input type="radio" id="star4" name="rating" value="4" />
+        <label for="star4"></label>
+        <input type="radio" id="star3" name="rating" value="3" />
+        <label for="star3"></label>
+        <input type="radio" id="star2" name="rating" value="2" />
+        <label for="star2"></label>
+        <input type="radio" id="star1" name="rating" value="1" />
+        <label for="star1"></label>
+      </div>
+
+      <p class="product-price">9.900.000</p>
+      <p><strong>Kiểu Dáng :</strong> <span> Giày Thể thao</span></p>
+      <p><strong>Giới tính :</strong> <span> Nam</span></p>
+      <p class="product-description">
+        <strong
+          >Giày Thể Thao Nam Nike Air Jordan 1 Retro Low OG Doernbecher
+          FD9665-351 Phối Màu</strong
+        >
+        được thiết kế trẻ trung, năng động đến từ thương hiệu Nike nổi tiếng của
+        Mỹ. Giày Thể Thao Nam Nike Air Jordan 1 Retro Low OG Doernbecher
+        FD9665-351 được làm từ chất liệu cao cấp, là đôi giày cực kỳ linh hoạt,
+        dễ dàng kết hợp với những item khó chiều
+      </p>
+      <mat-form-field>
+        <mat-label>Chọn size giày</mat-label>
+        <mat-select [(value)]="selected">
+          <mat-option value="option1">39</mat-option>
+          <mat-option value="option2">40</mat-option>
+          <mat-option value="option3">41</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="sl123">
+        <mat-label>số lượng</mat-label>
+        <mat-select [(value)]="selected2">
+          <mat-option value="option1">1</mat-option>
+          <mat-option value="option2">2</mat-option>
+          <mat-option value="option3">3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+  <hr />
+  <h1 class="tieude">Nhận xét</h1>
+  <button (click)="toggleComments()" class="toggle-comments">
+    Hiển thị/Ẩn bình luận
+  </button>
+
+  <div class="comments" [ngClass]="{ show: showComments }">
+    <div class="comment" *ngFor="let comment of comments">
+      <div class="comment-avatar">
+        <img src="avatar.jpg" alt="Avatar" />
+      </div>
+      <div class="comment-content">
+        <h4 class="comment-author">{{ comment.author }}</h4>
+        <p class="comment-text">{{ comment.text }}</p>
+        <span class="comment-timestamp">{{ comment.timestamp }}</span>
+      </div>
+    </div>
+    <div class="add-comment" [ngClass]="{ show: showComments }">
+      <input
+        type="text"
+        [(ngModel)]="newComment"
+        placeholder="Nhập bình luận"
+      />
+
+      <button (click)="addComment()" class="comment-button">Gửi</button>
+    </div>
+  </div>
+
+  <hr />
+  <h1 class="tieude">sản phẩm đề xuất</h1>
+  <!-- <div class="row">
+    <div class="col-3" *ngFor="let product of products">
+      <div class="card">
+        <a routerLink="deital">
+          <div class="card-img-wrapper">
+            <img src="{{ product.imgUrl }}" alt="" class="card-img-top" />
+            <div class="card-price-overlay">
+              <h6 class="card-price">{{ product.price }}</h6>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-title">nike</p>
+            <p class="card-name">{{ product.name }}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div> -->
+</body>
