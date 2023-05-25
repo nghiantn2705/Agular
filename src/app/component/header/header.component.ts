@@ -1,13 +1,23 @@
 import { Component } from '@angular/core';
-import {MatBadgeModule} from '@angular/material/badge';
+import { ApiService } from 'src/app/admin/services/api.service';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { LoginService } from 'src/app/admin/services/login.service';
+
+import { LoginComponent } from 'src/app/pages/login/login.component';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-  
+  constructor(private login: MatDialog, private api: LoginService) {
+
   }
+  openDialog() {
+    this.login.open(LoginComponent, {
+      width: '30%',
+    })
+  }
+ 
 }

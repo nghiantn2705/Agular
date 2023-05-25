@@ -12,7 +12,7 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class AdminComponent implements OnInit {
 
-  displayedColumns: string[] = ['name', 'price', 'desc', 'imgUrl',"brand", 'category', 'action'];
+  displayedColumns: string[] = ['name', 'price', 'desc', 'imgUrl', 'category', 'action'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -58,22 +58,16 @@ export class AdminComponent implements OnInit {
     })
   }
 
-  
   deleteProduct(id: number) {
-    if(confirm("Are you really ?") == true){
-      this.api.deleteProduct(id)
+    this.api.deleteProduct(id)
       .subscribe({
         next: (res) => {
-         
           alert("Product Delete Succesfully");
           this.getAllProduct();
-         
         }, error: () => {
           alert("Error while deleting the secord!...")
         }
       })
-    }
-   
   }
 
   applyFilter(event: Event) {

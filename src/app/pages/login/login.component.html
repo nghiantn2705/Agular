@@ -1,0 +1,33 @@
+<!-- <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <mat-form-field appearance="outline">
+    <mat-label>username</mat-label>
+    <input matInput type="username" formControlName="username">
+    <mat-error *ngIf="loginForm.controls['username']">Invalid username format</mat-error>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput type="password" formControlName="password">
+    <mat-error *ngIf="loginForm.controls['password']">Password is required</mat-error>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
+  <button mat-raised-button color="accent" (click)="openDialog1()">Đăng ký</button>
+</form> -->
+<h1 mat-dialog-title> Đăng nhập</h1>
+<div mat-dialog-content>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline">
+            <mat-label>Username</mat-label>
+            <input formControlName="username" matInput placeholder="Username ">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input formControlName="password"  type="password" matInput placeholder="Password">
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
+  <button mat-raised-button color="accent" (click)="openDialog1()">Đăng ký</button>
+</div>

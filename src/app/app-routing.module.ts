@@ -7,6 +7,7 @@ import { LayoutClientComponent } from './Layout/layout-client/layout-client.comp
 import { LayoutAdminComponent } from './Layout/layout-admin/layout-admin.component';
 import { DeitalProductComponent } from './pages/deital-product/deital-product.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
  {
@@ -14,7 +15,9 @@ const routes: Routes = [
     {path:"",redirectTo:'home',pathMatch:'full'},
     {path:'home',component:HomeComponent},
     {path:'deital',component:DeitalProductComponent},
-    {path:"**",component: NotfoundComponent}
+    {path:'login',component:LoginComponent},
+  
+    
   ]
  },
  {
@@ -23,7 +26,7 @@ const routes: Routes = [
     {path:'admin',component:AdminComponent}
   ]
  }
- 
+ ,  {path:"**",component: NotfoundComponent},
 ];
 
 @NgModule({

@@ -9,7 +9,6 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class AddComponent {
   productForm !: FormGroup;
-  titleBtn:string = "Add"
   actionBtn: string = "Save"
   actionBtn1: string = "add"
   constructor(private FormBuilder: FormBuilder,
@@ -22,21 +21,18 @@ export class AddComponent {
       name: ['', Validators.required],
       price: ['', Validators.required],
       imgUrl: ['', Validators.required],
-      brand: ['', Validators.required],
       desc: ['', Validators.required],
       category: ['', Validators.required],
     });
 
     console.log(this.editData);
     if (this.editData) {
-      this.titleBtn = "Update"
       this.actionBtn = "Update";
       this.actionBtn1 = "update";
       this.productForm.controls['name'].setValue(this.editData.name);
       this.productForm.controls['price'].setValue(this.editData.price);
       this.productForm.controls['desc'].setValue(this.editData.desc);
       this.productForm.controls['imgUrl'].setValue(this.editData.imgUrl);
-      this.productForm.controls['brand'].setValue(this.editData.brand);
       this.productForm.controls['category'].setValue(this.editData.category);
     }
 

@@ -72,4 +72,3 @@ export class DeitalProductComponent {
     this.showComments = !this.showComments;
   }
 }
-
