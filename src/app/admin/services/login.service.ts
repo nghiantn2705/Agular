@@ -10,8 +10,6 @@ export class LoginService {
     return this.http.post<any>("http://localhost:3000/users/",data);
   }
   loginUser(username: string, password: string) {
-    return this.http.get<{ id: number }[]>(
-      `http://localhost:3000/users?username=${username}&password=${password}`
-    );
+    return this.http.get('http://localhost:3000/users?username=' + username + '&password=' + password);
   }
 }

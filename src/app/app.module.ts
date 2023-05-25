@@ -1,12 +1,10 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
-
 import { CategoryComponent } from './pages/category/category.component';
 
 
@@ -32,6 +30,8 @@ import { LayoutClientComponent } from './Layout/layout-client/layout-client.comp
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 
+import { MatBadgeModule } from '@angular/material/badge';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
 
 // import { LoginComponent } from './pages/login/login.component';
 // import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -60,7 +60,7 @@ import { LoginComponent } from './pages/login/login.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    MatSelectModule,
     BrowserAnimationsModule,
     MatIconModule,
     MatToolbarModule,
@@ -73,9 +73,11 @@ import { LoginComponent } from './pages/login/login.component';
     FormsModule,
     HttpClientModule,
     MatPaginatorModule,
-    MatTableModule
+    MatTableModule,
+    MatBadgeModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }
