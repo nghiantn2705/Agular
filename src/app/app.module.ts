@@ -29,9 +29,11 @@ import { HeaderAdminComponent } from './component/header-admin/header-admin.comp
 import { LayoutClientComponent } from './Layout/layout-client/layout-client.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
-
+import { CommonModule } from '@angular/common';
 import { MatBadgeModule } from '@angular/material/badge';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { UsersComponent } from './admin/users/users.component';
+import { DeitalProductComponent } from './pages/deital-product/deital-product.component';
 
 // import { LoginComponent } from './pages/login/login.component';
 // import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -51,7 +53,8 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     LayoutClientComponent,
     RegisterComponent,
     LoginComponent,
- 
+    UsersComponent,
+    DeitalProductComponent,
 
 
 
@@ -74,7 +77,8 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     HttpClientModule,
     MatPaginatorModule,
     MatTableModule,
-    MatBadgeModule
+    MatBadgeModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent],

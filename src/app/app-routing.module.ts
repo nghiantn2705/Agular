@@ -14,7 +14,7 @@ const routes: Routes = [
   path:"", component:LayoutClientComponent,children: [
     {path:"",redirectTo:'home',pathMatch:'full'},
     {path:'home',component:HomeComponent},
-    {path:'deital',component:DeitalProductComponent},
+    {path:'home/items/:id',component:DeitalProductComponent},
     {path:'login',component:LoginComponent},
   
     
