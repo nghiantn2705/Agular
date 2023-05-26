@@ -50,17 +50,22 @@
     </div>
     <div class="search-input">
         <div class="search-card">   
-            <div class="search-card2">
+          
                 <input type="text" id="searchInput" placeholder="Nhập từ khóa">
                 <button onclick=""> <i class="gg-search" ></i></button>
-            </div>
-            <mat-icon matBadge="16" matBadgeColor="warn"><i class="gg-shopping-cart"></i></mat-icon>
+        
+              
+            <!-- <mat-icon matBadge="16" matBadgeColor="warn"><i class="gg-shopping-cart"></i></mat-icon> -->
+            <button  class="user" (click)="openDialog()"><span class="material-icons">
+              person
+              </span></button>
+              
            
         </div>
        
     </div>
     
-    <button mat-raised-button color="accent" (click)="openDialog()">Đăng nhập</button>
+   
   
   
 </header>

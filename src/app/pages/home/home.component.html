@@ -121,11 +121,11 @@
       </div>
     </div>
     <h1>GIÀY NAM</h1>
-
+    
     <div class="row">
       <div class="col-3" *ngFor="let product of products">
         <div class="card">
-          <a routerLink="/deital">
+          <a routerLink="/deital/{{product.id}}">
             <div class="card-img-wrapper">
               <img src="{{ product.imgUrl }}" alt="" class="card-img-top" />
               <div class="card-price-overlay">

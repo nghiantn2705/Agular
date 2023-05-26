@@ -6,7 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { CategoryComponent } from './pages/category/category.component';
-
+import { CommonModule } from '@angular/common';
 
 import { AddComponent } from './admin/add/add.component';
 import { AdminComponent } from './admin/admin/admin.component';
@@ -32,6 +32,7 @@ import { LoginComponent } from './pages/login/login.component';
 
 import { MatBadgeModule } from '@angular/material/badge';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { DeitalProductComponent } from './pages/deital-product/deital-product.component';
 
 // import { LoginComponent } from './pages/login/login.component';
 // import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -51,6 +52,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     LayoutClientComponent,
     RegisterComponent,
     LoginComponent,
+    DeitalProductComponent
  
 
 
@@ -58,6 +60,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
    
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     MatSelectModule,
@@ -75,6 +78,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     MatPaginatorModule,
     MatTableModule,
     MatBadgeModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent],
