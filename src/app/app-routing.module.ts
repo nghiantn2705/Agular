@@ -10,6 +10,7 @@ import { LayoutAdminComponent } from './Layout/layout-admin/layout-admin.compone
 
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LoginComponent } from './pages/login/login.component';
+import { CardComponent } from './pages/card/card.component';
 
 const routes: Routes = [
  {
@@ -18,6 +19,7 @@ const routes: Routes = [
     {path:'home',component:HomeComponent},
     {path:'home/items/:id',component:DeitalProductComponent},
     {path:'login',component:LoginComponent},
+    {path:'card',component:CardComponent},
   
     
     ],
