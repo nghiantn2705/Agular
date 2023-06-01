@@ -34,6 +34,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { UsersComponent } from './admin/users/users.component';
 import { DeitalProductComponent } from './pages/deital-product/deital-product.component';
+import { CardComponent } from './pages/card/card.component';
 
 // import { LoginComponent } from './pages/login/login.component';
 // import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -55,12 +56,14 @@ import { DeitalProductComponent } from './pages/deital-product/deital-product.co
     LoginComponent,
     UsersComponent,
     DeitalProductComponent,
+    CardComponent,
 
 
 
    
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     MatSelectModule,

@@ -215,6 +215,11 @@
       "password": "dsadsa312",
       "role":"admin",
       "id": 3
+    },
+    {
+      "username": "tienle",
+      "password": "1",
+      "id": 4
     }
   ]
 }
