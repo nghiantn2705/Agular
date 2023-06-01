@@ -6,7 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { CategoryComponent } from './pages/category/category.component';
-import { CommonModule } from '@angular/common';
+
 
 import { AddComponent } from './admin/add/add.component';
 import { AdminComponent } from './admin/admin/admin.component';
@@ -29,9 +29,10 @@ import { HeaderAdminComponent } from './component/header-admin/header-admin.comp
 import { LayoutClientComponent } from './Layout/layout-client/layout-client.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
-
+import { CommonModule } from '@angular/common';
 import { MatBadgeModule } from '@angular/material/badge';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { UsersComponent } from './admin/users/users.component';
 import { DeitalProductComponent } from './pages/deital-product/deital-product.component';
 
 // import { LoginComponent } from './pages/login/login.component';
@@ -52,8 +53,8 @@ import { DeitalProductComponent } from './pages/deital-product/deital-product.co
     LayoutClientComponent,
     RegisterComponent,
     LoginComponent,
-    DeitalProductComponent
- 
+    UsersComponent,
+    DeitalProductComponent,
 
 
 
@@ -77,8 +78,8 @@ import { DeitalProductComponent } from './pages/deital-product/deital-product.co
     HttpClientModule,
     MatPaginatorModule,
     MatTableModule,
-    MatBadgeModule
-   
+    MatBadgeModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent],

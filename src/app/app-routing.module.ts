@@ -12,14 +12,13 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LoginComponent } from './pages/login/login.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: LayoutClientComponent,
-    children: [
-      { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'home', component: HomeComponent },
-      { path: 'deital/:id', component: DeitalProductComponent },
-      { path: 'login', component: LoginComponent },
+ {
+  path:"", component:LayoutClientComponent,children: [
+    {path:"",redirectTo:'home',pathMatch:'full'},
+    {path:'home',component:HomeComponent},
+    {path:'home/items/:id',component:DeitalProductComponent},
+    {path:'login',component:LoginComponent},
+  
     
     ],
   },

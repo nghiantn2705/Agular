@@ -1,64 +1,6 @@
 {
   "productList": [
     {
-      "name": "GIÀY THỂ THAO ADIDAS SUPERNOVA RUNNING SHOES 2 GW9087 MÀU ĐEN-42.5",
-      "price": "1.990.000",
-      "imgUrl": "https://admin.thegioigiay.com/upload/product/2023/05/giay-the-thao-adidas-supernova-running-shoes-2-gw9087-mau-den-42-5-645a15d1c53af-09052023164345.jpg",
-      "desc": "Giày Thể Thao Adidas Supernova Running Shoes 2 GW9087 Màu Đen với thiết kế ôm chân đến từ thương hiệu nổi tiếng Adidas. Giày Adidas Ultraboost 5 DNA Running Lifestyle GV8746 sở hữu phối màu đen mạnh mẽ, sử dụng chất liệu nhẹ và thoáng khí, mang lại trải nghiệm tốt nhất khi lên chân.",
-      "brand": "Adidas",
-      "category": "Thể thao",
-      "id": 7,
-      "images": [
-        {
-          "id": 1,
-          "images_url": "https://admin.thegioigiay.com/upload/product/2023/05/giay-the-thao-adidas-supernova-running-shoes-2-gw9087-mau-den-42-5-645a15d1cdeea-09052023164345.jpg"
-        },
-        {
-          "id": 2,
-          "images_url": "https://admin.thegioigiay.com/upload/product/2023/05/giay-the-thao-adidas-supernova-running-shoes-2-gw9087-mau-den-42-5-645a15d1d98ce-09052023164345.jpg"
-        },
-        {
-          "id": 3,
-          "images_url": "https://admin.thegioigiay.com/upload/product/2023/05/giay-the-thao-adidas-supernova-running-shoes-2-gw9087-mau-den-42-5-645a15d1eca7e-09052023164345.jpg"
-        },
-        {
-          "id": 4,
-          "images_url": "https://admin.thegioigiay.com/upload/product/2023/05/giay-the-thao-adidas-supernova-running-shoes-2-gw9087-mau-den-42-5-645a15d1eca7e-09052023164345.jpg"
-        },
-        {
-          "id": 5,
-          "images_url": "https://admin.thegioigiay.com/upload/product/2023/05/giay-the-thao-adidas-supernova-running-shoes-2-gw9087-mau-den-42-5-645a15d20142e-09052023164346.jpg"
-        },
-        {
-          "id": 6,
-          "images_url": "https://admin.thegioigiay.com/upload/product/2023/05/giay-the-thao-adidas-supernova-running-shoes-2-gw9087-mau-den-42-5-645a15d20b266-09052023164346.jpg"
-        }
-      ]
-    },
-    {
-      "name": "GIÀY THỂ THAO ADIDAS NAM GALAXY 6 GX7240 MÀU ĐEN",
-      "price": "1.350.000",
-      "imgUrl": "https://admin.thegioigiay.com/upload/product/2023/03/giay-adidas-nam-chinh-hang-galaxy-6-japansport-gx7240-mau-den-6402bfd9c5c56-04032023104945.jpg",
-      "desc": "Giày Adidas Nam Chính Hãng Galaxy 6 - JapanSport GX7240 Màu Đen với thiết kế ôm chân đến từ thương hiệu nổi tiếng Adidas. Giày Adidas Nam Chính Hãng Galaxy 6 sở hữu phối màu đen mang phong cách mạnh mẽ, sử dụng chất liệu nhẹ và thoáng khí, mang lại trải nghiệm tốt nhất khi lên chân.",
-      "brand": "Adidas",
-      "category": "Thể thao",
-      "id": 8,
-      "images": [
-        {
-          "id": 1,
-          "images_url": "https://admin.thegioigiay.com/upload/product/2023/03/giay-adidas-nam-chinh-hang-galaxy-6-japansport-gx7240-mau-den-6402bfd9991d0-04032023104945.jpg"
-        },
-        {
-          "id": 2,
-          "images_url": "https://admin.thegioigiay.com/upload/product/2023/03/giay-adidas-nam-chinh-hang-galaxy-6-japansport-gx7240-mau-den-6402bfd9aed0e-04032023104945.jpg"
-        },
-        {
-          "id": 3,
-          "images_url": "https://admin.thegioigiay.com/upload/product/2023/03/giay-adidas-nam-chinh-hang-galaxy-6-japansport-gx7240-mau-den-6402bfd9d5c7c-04032023104945.jpg"
-        }
-      ]
-    },
-    {
       "name": "GIÀY THỂ THAO ADIDAS ZX 1K BOOST 'WHITE BLACK' FX6510 PHỐI MÀU ĐEN TRẮNG",
       "price": "2.390.000",
       "imgUrl": "https://admin.thegioigiay.com/upload/product/2023/03/giay-the-thao-adidas-zx-1k-boost-white-black-fx6510-phoi-mau-den-trang-64084d0bf0d8c-08032023155331.jpg",
@@ -271,6 +213,7 @@
     {
       "username": "đasasa",
       "password": "dsadsa312",
+      "role":"admin",
       "id": 3
     },
     {

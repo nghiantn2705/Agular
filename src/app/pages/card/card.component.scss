@@ -1,0 +1,121 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.container{
+    width: 80%;
+}
+h1{
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000;
+    
+    text-transform: uppercase;
+    font-weight: 700 !important;
+   
+    margin-top: 40px;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #dddddd;
+}
+.sp img{
+    width: 150px;
+}
+.sp{
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+.name-sp{
+    margin-top: 60px;
+    margin-left: 10px;
+    
+}
+.name-sp1{
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #000;
+   
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+}
+
+
+.number-button-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .number-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .number-button:hover {
+    background-color: #ddd;
+  }
+  
+  .number-display {
+    margin: 0 10px;
+    font-size: 18px;
+  }
+.price-all{
+   font-size: 18px;
+   font-weight: 700;
+   color: red;
+  }
+  hr{
+    margin-top: 40px;
+  }
+.tieptuc{
+    margin-top: 30px;
+    width: 160px;
+    height: 42px;
+    border: 1px solid transparent;
+    background-color: #f5f5f5 ;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    color: gray;
+
+}
+.tieptuc:hover{
+    text-decoration: underline;
+    color: #000;
+}
+.buy{
+    width: 160px;
+    height: 42px;
+    border: 1px solid transparent;
+    background-color:black;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    color: white;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+.buy:hover{
+    text-decoration: underline;
+  
+}
+.thanhtoan {
+    display: flex;
+    justify-content: space-between;
+}
