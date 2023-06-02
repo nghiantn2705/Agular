@@ -1,0 +1,41 @@
+.mat-dialog-container {
+    width: 400px;
+    padding: 20px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  mat-dialog-actions {
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Tùy chỉnh màu sắc */
+  .mat-dialog-title {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .mat-form-field {
+    background-color: #f8f8f8;
+  }
+  
+  button[color="primary"] {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  button[color="primary"]:hover {
+    background-color: #45a049;
+  }
+  
