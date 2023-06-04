@@ -101,7 +101,7 @@
                 alt=""
               />
               <div class="vongngoai">
-                <p>giày nam --></p>
+                <p>giày nam </p>
               </div>
             </a>
           </div>
@@ -113,7 +113,7 @@
                 alt=""
               />
               <div class="vongngoai">
-                <p>giày nữ --></p>
+                <p>giày nữ </p>
               </div>
             </a>
           </div>
@@ -125,9 +125,9 @@
     <div class="row">
       <div class="col-3" *ngFor="let product of products">
         <div class="card">
-          <a routerLink="items/{{product.id}}">
+          <a routerLink="/detail/{{product._id}}">
             <div class="card-img-wrapper">
-              <img src="{{ product.imgUrl }}" alt="" class="card-img-top" />
+              <img src="{{ product?.imgs[0] }}" alt="" class="card-img-top" />
               <div class="card-price-overlay">
                 <h6 class="card-price">{{ product.price }}</h6>
               </div>
@@ -144,9 +144,9 @@
     <div class="row">
       <div class="col-3" *ngFor="let product of products">
         <div class="card">
-          <a routerLink="items/{{product.id}}">
+          <a routerLink="/detail/{{product._id}}">
             <div class="card-img-wrapper">
-              <img src="{{ product.imgUrl }}" alt="" class="card-img-top" />
+              <img src="{{ product.img }}" alt="" class="card-img-top" />
               <div class="card-price-overlay">
                 <h6 class="card-price">{{ product.price }}</h6>
               </div>

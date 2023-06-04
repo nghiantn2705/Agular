@@ -72,29 +72,6 @@
       "desc": "Giày Thể Thao Adidas Predator Freak .3 LL FG Meteorite Pack FY6295 Màu Đỏ Cam là mẫu giày thể thao đến từ thương hiệu nổi tiếng Adidas. Giày Thể Thao Adidas Predator Freak .3 LL FG sở hữu màu đỏ cam mạnh mẽ nổi bật, kiểu dáng khỏe khoắn cùng chất liệu cao cấp sẽ mang lại trải nghiệm tốt nhất khi lên chân.",
       "brand": "Nike",
       "category": "Thể thao",
-      "id": 12,
-      "images": [
-        {
-          "id": 1,
-          "images_url": ""
-        },
-        {
-          "id": 2,
-          "images_url": ""
-        },
-        {
-          "id": 3,
-          "images_url": ""
-        }
-      ]
-    },
-    {
-      "name": "GIÀY THỂ THAO ADIDAS PREDATOR FREAK .3 LL FG METEORITE PACK FY6295 MÀU ĐỎ CAM",
-      "price": "1.490.000",
-      "imgUrl": "",
-      "desc": "Giày Thể Thao Adidas Predator Freak .3 LL FG Meteorite Pack FY6295 Màu Đỏ Cam là mẫu giày thể thao đến từ thương hiệu nổi tiếng Adidas. Giày Thể Thao Adidas Predator Freak .3 LL FG sở hữu màu đỏ cam mạnh mẽ nổi bật, kiểu dáng khỏe khoắn cùng chất liệu cao cấp sẽ mang lại trải nghiệm tốt nhất khi lên chân.",
-      "brand": "Nike",
-      "category": "Thể thao",
       "id": 13,
       "images": [
         {
@@ -213,7 +190,7 @@
     {
       "username": "đasasa",
       "password": "dsadsa312",
-      "role":"admin",
+      "role": "admin",
       "id": 3
     },
     {

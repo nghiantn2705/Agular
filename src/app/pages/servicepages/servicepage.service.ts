@@ -9,6 +9,6 @@ export class ServicepageService {
   constructor(private http: HttpClient) { }
 
   getProduct(){
-    return this.http.get<any>("http://localhost:3000/productList/");
+    return this.http.get<any>("http://localhost:8088/api/products/");
   }
 }
