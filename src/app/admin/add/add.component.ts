@@ -20,9 +20,11 @@ export class AddComponent {
     this.productForm = this.FormBuilder.group({
       name: ['', Validators.required],
       price: ['', Validators.required],
-      imgUrl: ['', Validators.required],
+      imgs: ['', Validators.required],
       desc: ['', Validators.required],
       category: ['', Validators.required],
+      type: ['', Validators.required],
+      sex: ['', Validators.required],
     });
 
     console.log(this.editData);
@@ -34,6 +36,8 @@ export class AddComponent {
       this.productForm.controls['desc'].setValue(this.editData.desc);
       this.productForm.controls['imgUrl'].setValue(this.editData.imgUrl);
       this.productForm.controls['category'].setValue(this.editData.category);
+      this.productForm.controls['type'].setValue(this.editData.category);
+      this.productForm.controls['sex'].setValue(this.editData.category);
     }
 
   }

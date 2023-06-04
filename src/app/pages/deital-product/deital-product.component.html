@@ -7,7 +7,7 @@
 
   <div class="container" *ngIf="product">
     <div class="img">
-     
+   
       <div class="image-gallery">
         <div class="main-image" *ngIf="mainImage">
           <img [src]="mainImage" alt="Main Image">
@@ -34,7 +34,7 @@
    
     <div class="product-details" >
       
-  
+      <p *ngIf="categoryname">{{categoryname}}</p>
       <h1 class="product-title">{{product.name}}
       </h1>
       <p class="dg-sao">Đánh giá:</p>
@@ -52,10 +52,9 @@
       </div>
 
       <p class="product-price">{{product.price}}</p>
-      <p><strong>Kiểu Dáng :</strong> <span> Giày Thể thao</span></p>
-      <p><strong>Giới tính :</strong> <span> Nam</span></p>
-      <p class="product-description"> <strong>Giày Thể Thao Nam Nike Air Jordan 1 Retro Low OG Doernbecher FD9665-351
-          Phối Màu</strong> được thiết kế trẻ trung, năng động đến từ thương hiệu Nike nổi tiếng của Mỹ. Giày Thể Thao
+      <p><strong>Kiểu Dáng :</strong> <span> {{product.type}}</span></p>
+      <p><strong>Giới tính :</strong> <span> {{product.sex}}</span></p>
+      <p class="product-description"> <strong>{{product.name}}</strong> được thiết kế trẻ trung, năng động đến từ thương hiệu Nike nổi tiếng của Mỹ. Giày Thể Thao
         Nam Nike Air Jordan 1 Retro Low OG Doernbecher FD9665-351 được làm từ chất liệu cao cấp, là đôi giày cực kỳ linh
         hoạt, dễ dàng kết hợp với những item khó chiều</p>
 <div>

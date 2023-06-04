@@ -31,15 +31,15 @@
                 </ng-container>
 
               
-                <ng-container matColumnDef="desc">
+                <ng-container matColumnDef="description">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Product Desc </th>
-                    <td mat-cell *matCellDef="let row"> {{row.desc}} </td>
+                    <td mat-cell *matCellDef="let row"> {{row.description}} </td>
                 </ng-container>
 
                 
-                <ng-container matColumnDef="imgUrl">
+                <ng-container matColumnDef="imgs">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Product ImgUrl </th>
-                    <td mat-cell *matCellDef="let row"> <img src="{{row.imgUrl}}" alt="" id="img"> </td>
+                    <td mat-cell *matCellDef="let row"> <img src="{{row.img}}" alt="" id="img"> </td>
                 </ng-container>
 
                 <ng-container matColumnDef="brand">
@@ -47,9 +47,19 @@
                     <td mat-cell *matCellDef="let row"> {{row.brand}} </td>
                 </ng-container>
 
-                <ng-container matColumnDef="category">
+                <ng-container matColumnDef="categoryId">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Product Category </th>
-                    <td mat-cell *matCellDef="let row"> {{row.category}} </td>
+                    <td mat-cell *matCellDef="let row"> {{row.categoryId.name}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="type">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Product Type </th>
+                    <td mat-cell *matCellDef="let row"> {{row.type}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="sex">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Sex </th>
+                    <td mat-cell *matCellDef="let row"> {{row.sex}} </td>
                 </ng-container>
 
                 <ng-container matColumnDef="action">

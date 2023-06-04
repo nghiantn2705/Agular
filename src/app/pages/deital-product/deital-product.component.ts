@@ -22,19 +22,31 @@ interface Food {
 export class DeitalProductComponent implements OnInit {
   product: any;
   images: any;
+  img: any;
+  categoryname: any;
   mainImage: string = "";
   thumbnails: string[] = [];
 
   constructor(private route: ActivatedRoute, private http: HttpClient,private dialog: MatDialog) {}
 
   ngOnInit(): void {
-    const productId = this.route.snapshot.paramMap.get('id');
-    this.http.get<any>(`http://localhost:3000/productList/${productId}`).subscribe(data => {
+    const productId = this.route.snapshot.paramMap.get('_id');
+    console.log(productId);
+    
+    this.http.get<any>(`http://localhost:8088/api/products/${productId}`).subscribe(data => {
       this.product = data;
-      this.images = data.images;
-
-      this.thumbnails = this.images.map((image: any) => image.images_url);
-      this.mainImage = this.thumbnails[0];
+      console.log(data);
+      
+      // this.img = data.img;
+      this.images = data.imgs;
+      console.log(this.images);
+      this.categoryname = data.categoryId.name;
+      console.log(this.categoryname);
+      
+      this.thumbnails = this.images.map((image: any) => image);
+      console.log(this.thumbnails);
+      
+      this.mainImage = this.thumbnails[this.thumbnails.length - 1];
     });
   }
 
