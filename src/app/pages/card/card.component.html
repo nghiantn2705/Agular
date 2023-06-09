@@ -1,36 +1,94 @@
-
-
+<app-title title="Cart Page" margin="1.5rem 0 0 2.5rem"></app-title>
+<app-not-found
+  [visible]="!cart || !cart.items.length"
+  notFoundMessage="Cart Page Is Empty!"
+  resetLinkText="Go To Homepage"
+></app-not-found>
 <div class="container">
-    <h1>Giỏ Hàng</h1>
-    <table>
-        <tr>
-          <th>Sản Phẩm</th>
-          <th>Đơn Giá</th>
-          <th>Số lượng</th>
-          <th>Thành tiền</th>
-        </tr>
-        <tr>
-          <td class="sp"><img src="https://admin.thegioigiay.com/upload/product/2023/05/giay-the-thao-nam-nike-air-jordan-1-retro-low-og-doernbecher-fd9665-351-phoi-mau-38-5-645eee8896f4d-13052023085728.jpg" alt=""> <div class="name-sp"> <p class="name-sp1"> Giày Thể Thao Nam Nike Air Jordan 1 Retro Low OG Doernbecher FD9665-351 Phối Màu-38.5</p>
-           <p>size:40</p></div></td>
-          <td class="price">9.900.000₫</td>
-          <td><div class="number-button-container">
-            <button class="number-button" (click)="decreaseNumber()">-</button>
-            <span class="number-display">{{ number }}</span>
-            <button class="number-button" (click)="increaseNumber()">+</button>
-          </div></td>
-          <td class="price-all">9.900.000₫</td>
-        </tr>
+  <h1>Giỏ Hàng</h1>
+  <table *ngIf="cart && cart.items.length">
+    <tr>
+      <th>Sản Phẩm</th>
+      <th>Đơn Giá</th>
+      <th>Số lượng</th>
+      <th>Thành tiền</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let cartItem of cart.items">
+      <td class="sp">
+        <img [src]="cartItem.product.imgs[0]" [alt]="cartItem.product.name" />
+        <div class="name-sp">
+          <p class="name-sp1">
+            Giày Thể Thao Nam Nike Air Jordan 1 Retro Low OG Doernbecher
+            FD9665-351 Phối Màu-38.5
+          </p>
+          <p>size:40</p>
+        </div>
+      </td>
+      <td class="price">{{ cartItem.product.price | currency }}đ</td>
+      <td>
+        <div>
+          <select
+            #quantitySelect
+            [value]="cartItem.quantity"
+            (change)="changeQuantity(cartItem, quantitySelect.value)"
+          >
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </td>
+      <td class="price-all">{{ cartItem.price | currency }}đ</td>
+      <td>
+        <button class="remove-button" (click)="removeFromCart(cartItem)">
+          Remove
+        </button>
+      </td>
+    </tr>
+  </table>
+  <hr />
+  <div class="thanhtoan">
+    <div>
+      <button class="tieptuc" routerLink="/">Tiếp tục mua hàng</button>
+    </div>
+    <div>
+      <p>
+        Tổng tiền:
+        <span class="price-all">{{ cart.totalPrice | currency }}đ</span>
+      </p>
+      <button class="buy">Thanh Toán</button>
+    </div>
+  </div>
+
+  <!-- <div  class="container">
+    <ul>
+      <li >
+        <div>
+          
+        </div>
+        <div>
+          <a routerLink="/food/{{ cartItem.product._id }}">
+            {{ cartItem.product.name }}
+          </a>
+        </div>
         
-      </table>
-      <hr>
-      <div class="thanhtoan">
-       <div>
-        <button class="tieptuc">< Tiếp tục mua hàng</button>
-       </div>
-       <div>
-        <p>Tổng tiền: <span class="price-all">9.900.000₫</span></p>
-        <button class="buy">Thanh Toán</button>
-       </div>
-      
+        <div>
+          {{ cartItem.price | currency }}
+        </div>
+
+        
+      </li>
+    </ul>
+    <div class="checkout">
+      <div>
+        <div class="foods-count">{{ cart.totalCount }}</div>
+        <div class="total-price">{{ cart.totalPrice | currency }}</div>
       </div>
+
+      <a routerLink="/checkout">Proceed to Checkout</a>
+    </div>
+  </div> -->
 </div>

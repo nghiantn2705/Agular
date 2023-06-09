@@ -55,7 +55,7 @@
       <p><strong>Kiểu Dáng :</strong> <span> {{product.type}}</span></p>
       <p><strong>Giới tính :</strong> <span> {{product.sex}}</span></p>
       <p class="product-description"> <strong>{{product.name}}</strong> được thiết kế trẻ trung, năng động đến từ thương hiệu Nike nổi tiếng của Mỹ. Giày Thể Thao
-        Nam Nike Air Jordan 1 Retro Low OG Doernbecher FD9665-351 được làm từ chất liệu cao cấp, là đôi giày cực kỳ linh
+        Nam {{product.name}} được làm từ chất liệu cao cấp, là đôi giày cực kỳ linh
         hoạt, dễ dàng kết hợp với những item khó chiều</p>
 <div>
   <button class="size" (click)="openDialog()">Hướng dẫn chọn size giày</button>   
@@ -78,7 +78,7 @@
             <mat-option value="3">3</mat-option>
           </mat-select>
         </mat-form-field>
-      <button class="add-to-cart" routerLink="card">Add to Cart</button>
+      <button class="add-to-cart" (click)="addTooCart()"  routerLink="card">Add to Cart</button>
     </div>
   </div>
   <hr>

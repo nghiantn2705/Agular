@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
-import { ViewChild, TemplateRef } from '@angular/core';
+import { CartService } from 'src/app/services/cart.service';
+import { ProductService } from './ProductService';
+import { Products } from 'src/app/common/products';
 import { DialogComponent } from './chonsizegiay.service';
 import { MatDialog } from '@angular/material/dialog';
 interface Comment {
@@ -20,6 +21,7 @@ interface Food {
   styleUrls: ['./deital-product.component.scss']
 })
 export class DeitalProductComponent implements OnInit {
+  proorder!: Products;
   product: any;
   images: any;
   img: any;
@@ -27,7 +29,7 @@ export class DeitalProductComponent implements OnInit {
   mainImage: string = "";
   thumbnails: string[] = [];
 
-  constructor(private route: ActivatedRoute, private http: HttpClient,private dialog: MatDialog) {}
+  constructor(private route: ActivatedRoute, private http: HttpClient,private dialog: MatDialog, ProductService:ProductService, private cartService:CartService, private router: Router,activatedRoute:ActivatedRoute) {}
 
   ngOnInit(): void {
     const productId = this.route.snapshot.paramMap.get('_id');
@@ -36,6 +38,7 @@ export class DeitalProductComponent implements OnInit {
     this.http.get<any>(`http://localhost:8088/api/products/${productId}`).subscribe(data => {
       this.product = data;
       console.log(data);
+      this.proorder = data;
       
       // this.img = data.img;
       this.images = data.imgs;
@@ -77,7 +80,10 @@ export class DeitalProductComponent implements OnInit {
       }
     });
   }
-
+  addTooCart(){
+    this.cartService.addToCart(this.proorder);
+    this.router.navigateByUrl('/card');
+  }
 }
 
 

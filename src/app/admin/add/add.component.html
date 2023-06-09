@@ -9,18 +9,28 @@
       <mat-label>Product Price</mat-label>
       <input formControlName="price" matInput placeholder="Price" />
     </mat-form-field>
-    <mat-form-field appearance="outline">
-      <mat-label>Product imgUrl</mat-label>
-      <input formControlName="imgs" matInput placeholder="ImgUrl" />
-    </mat-form-field>
+    <div class="form-group">
+      <label for="imgs">File</label>
+      <input
+        formControlName="imgs"
+        id="imgs"
+        type="file"
+        multiple
+        class="form-control"
+        (change)="onFileChange($event)"
+      />
+      <div *ngIf="f.imgs.touched && f.imgs.invalid" class="alert alert-danger">
+        <div *ngIf="f.imgs.errors.required">File is required.</div>
+      </div>
+    </div>
     <mat-form-field appearance="outline">
       <mat-label>Product Desc</mat-label>
-      <input formControlName="desc" matInput placeholder="Description" />
+      <input formControlName="description" matInput placeholder="Description" />
     </mat-form-field>
     <mat-form-field appearance="outline">
       <mat-label>Product Category</mat-label>
-      <mat-select formControlName="category" placeholder="Category">
-        <mat-option value="Fruits">Fruits</mat-option>
+      <mat-select formControlName="categoryId" placeholder="Category">
+        <mat-option value="6475358884a103625328f3ac">nike</mat-option>
         <mat-option value="Vegetables">Vegetables</mat-option>
         <mat-option value="Electronic">Electronic</mat-option>
       </mat-select>

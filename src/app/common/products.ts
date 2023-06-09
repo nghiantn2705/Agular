@@ -1,9 +1,10 @@
-export interface Products {
-    id: number;
-    name: String;
-    price: number;
-    description: string;
-    imgUrl: string;
-    category:string;
-    isDescriptionVisible: boolean,
+export class Products {
+    _id!: Object;
+    name!: string;
+    price!: number;
+    description!: string;
+    categoryId!: Object;
+    imgs!: string[];
+    type!:string;
+    sex!: string
 }

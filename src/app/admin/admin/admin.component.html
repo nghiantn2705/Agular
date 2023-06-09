@@ -39,7 +39,7 @@
                 
                 <ng-container matColumnDef="imgs">
                     <th mat-header-cell *matHeaderCellDef mat-sort-header> Product ImgUrl </th>
-                    <td mat-cell *matCellDef="let row"> <img src="{{row.img}}" alt="" id="img"> </td>
+                    <td mat-cell *matCellDef="let row"> <img src="{{row.imgs[0]}}" alt="" id="img"> </td>
                 </ng-container>
 
                 <ng-container matColumnDef="brand">
