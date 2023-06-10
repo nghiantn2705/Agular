@@ -1,117 +1,126 @@
-
-
-  /**tìm kiếm**/
-.search-card{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 50px;
-    }
-.search-card2{
-        margin-right: 20px;
-    }
-.search-input button {
-  
-    top: 0;
-    right: 0;
-    width: 30px;
-    height: 30px;
-
-    background-color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    border:  1px solid gray;
-    cursor: pointer;
-    padding-left: 8px;
-    
-  }
-.search-input {
-    position: relative;
-    display: inline-block;
-  }
-.card{
-    color: #000;
-    background-color: white;
-    border: 1px solid white;   
+/** Tìm kiếm **/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+background-color: white;
+  z-index: 9999;
+  margin-top: 0px;
+  /* Các thuộc tính CSS khác */
 }
-.search-card2 button{
+.spacer {
+  height: 130px; /* Điều chỉnh chiều cao khoảng trống tùy ý */
+}
+
+.search-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.search-card2 {
+  margin-right: 20px;
+}
+
+.search-input button {
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: 1px solid gray;
+  cursor: pointer;
+  padding-left: 8px;
+}
+
+.search-input {
+  position: relative;
+  display: inline-block;
+}
+
+.card {
+  color: #000;
+  background-color: white;
   border: 1px solid white;
 }
-.card i{
-    font-size: 30px
+
+.card i {
+  font-size: 30px;
 }
- /**tìm kiếm**/
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-header{
-    display: flex;
-   justify-content: space-between;
-   align-items: center;
-   position: relative;
-   border-bottom: 1px solid #ccc;
-    
+
+/** Menu **/
+.all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #ccc;
 }
-/**menu**/
-.menu-me{
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #000;
-    margin: 0;
-    padding: 0.75rem 1rem;
-    text-transform: uppercase;
-    font-weight: 700 !important;
+
+.menu-me {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+  font-weight: 700 !important;
 }
+
 .menu {
-    display: flex;
-    justify-content: space-between; /* căn đều các phần tử */
-    align-items: center; /* căn giữa theo chiều dọc */
-    list-style-type: none; /* loại bỏ dấu chấm */
-    margin-top: 10px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 10px;
+}
 
-  .menu li {
-    position: relative; /* tạo không gian cho menu con */
-  }
+.menu li {
+  position: relative;
+}
 
-  .menu li a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px;
-    font-size: 17px;
-  }
-  // .menu li {
-  //   /* đường kẻ mặc định */
-  // }
-  
-  .menu li:hover {
-    border-bottom: 2px solid #333; /* đường kẻ đậm khi hover */
-  }
-  .menu li ul {
-    display: none; /* ẩn menu con ban đầu */
-    position: absolute; /* căn chỉnh vị trí menu con */
-    top: 100%; /* đặt vị trí dưới menu chính */
-    left: 0;
-   border: 1px solid gray;
-    padding: 0;
-    margin: 0;
-    list-style-type: none; /* loại bỏ dấu chấm */
-  }
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  font-size: 17px;
+}
 
-  .menu li:hover ul {
-    display: flex; /* hiển thị menu con khi hover */
-    flex-direction: row; /* căn chỉnh menu con ngang */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.menu li:hover {
+  border-bottom: 2px solid #333;
+}
 
-  .menu li ul li {
-    padding: 10px;
-  }
-  /**menu**/
-  .search-card button{
-    border: 1px solid white;
-  
-  }
-  .user{
-    font-size: 20px;
-  }
+.menu li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid gray;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu li:hover ul {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.menu li ul li {
+  padding: 10px;
+}
+
+.search-card button {
+  border: 1px solid white;
+}
+
+.user {
+  font-size: 20px;
+}

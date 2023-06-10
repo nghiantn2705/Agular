@@ -54,9 +54,7 @@
       <p class="product-price">{{product.price}}</p>
       <p><strong>Kiểu Dáng :</strong> <span> {{product.type}}</span></p>
       <p><strong>Giới tính :</strong> <span> {{product.sex}}</span></p>
-      <p class="product-description"> <strong>{{product.name}}</strong> được thiết kế trẻ trung, năng động đến từ thương hiệu Nike nổi tiếng của Mỹ. Giày Thể Thao
-        Nam Nike Air Jordan 1 Retro Low OG Doernbecher FD9665-351 được làm từ chất liệu cao cấp, là đôi giày cực kỳ linh
-        hoạt, dễ dàng kết hợp với những item khó chiều</p>
+      <p class="product-description"> <strong></strong>{{product.description}} </p>
 <div>
   <button class="size" (click)="openDialog()">Hướng dẫn chọn size giày</button>   
 </div>
@@ -85,9 +83,34 @@
   <h1 class="tieude">Nhận xét</h1>
  
   <hr>
-  <h1 class="tieude"> sản phẩm đề xuất</h1>
+  <div class="speact">
+    <h1 class="tieude">Sản phẩm đề xuất</h1>
+    <div class="row" >
+      <div class="col-3" *ngFor="let product of products | slice:0:4 ">
+        <div class="card" >
+          <a routerLink="/detail/{{product._id}}">
+            <div class="card-img-wrapper">
+              <img src="{{ product?.imgs[0] }}" alt="" class="card-img-top" />
+              <div class="card-price-overlay">
+                <h6 class="card-price">{{ product.price }}</h6>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-title">{{ product.brand }}</p>
+              <p class="card-name">{{ product.name }}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
   
-  
+    
+
+  </div>
+
+ 
 </body>
       
    

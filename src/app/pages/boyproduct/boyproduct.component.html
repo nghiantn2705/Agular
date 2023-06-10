@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Toàn Bộ Sản Phẩm</h1>
+    <div class="row">
+      <ng-container *ngFor="let product of pagedProducts">
+        <!-- Các sản phẩm trong trang hiện tại -->
+        <div class="col-3" *ngIf="product.sex === 'Nam' ">
+          <div class="card">
+            <a routerLink="/detail/{{ product._id }}">
+              <div class="card-img-wrapper">
+                <img src="{{ product?.imgs[0] }}" alt="" class="card-img-top" />
+                <div class="card-price-overlay">
+                  <h6 class="card-price">{{ product.price }}</h6>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-title">{{ product.brand }}</p>
+                <p class="card-name">{{ product.name }}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+    <mat-paginator [length]="totalItems" [pageSize]="itemsPerPage" [pageSizeOptions]="pageSizeOptions" (page)="onPageChange($event)"></mat-paginator>
+  </div>
+  

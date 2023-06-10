@@ -19,5 +19,6 @@ export class HeaderComponent {
       width: '30%',
     })
   }
+  
  
 }

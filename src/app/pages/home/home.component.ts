@@ -11,11 +11,13 @@ export class HomeComponent {
   ngOnInit(): void {
     this.getAllProduct();
   }
-  products:any
+  products:any[]=[];
   getAllProduct() {
     this.api.getProduct().subscribe({
-      next: (res) => {
-        this.products = res
+      next: (res: any) => {
+        if (Array.isArray(res) && res.length >= 5) {
+          this.products = res.slice(0, 8);
+        }
       },
       error: () => {
         alert('Error while fetching the Records!...');

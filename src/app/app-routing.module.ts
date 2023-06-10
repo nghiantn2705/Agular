@@ -11,6 +11,9 @@ import { LayoutAdminComponent } from './Layout/layout-admin/layout-admin.compone
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CardComponent } from './pages/card/card.component';
+import { AllproductComponent } from './pages/allproduct/allproduct.component';
+import { BoyproductComponent } from './pages/boyproduct/boyproduct.component';
+import { GirlproductComponent } from './pages/girlproduct/girlproduct.component';
 
 const routes: Routes = [
  {
@@ -20,6 +23,10 @@ const routes: Routes = [
     {path:'detail/:_id',component:DeitalProductComponent},
     {path:'login',component:LoginComponent},
     {path:'card',component:CardComponent},
+    {path:'allproduct',component:AllproductComponent},
+    {path:'boyproduct',component:BoyproductComponent},
+    {path:'girlproduct',component:GirlproductComponent},
+
   
     
     ],
