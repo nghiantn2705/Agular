@@ -27,7 +27,7 @@ export class AdminComponent implements OnInit {
     this.add.open(AddComponent, {
       width: '30%',
 
-    }).afterClosed().subscribe(val => {
+    }).afterClosed().subscribe((val: string) => {
       if (val === 'save') {
         this.getAllProduct();
       }
@@ -36,7 +36,7 @@ export class AdminComponent implements OnInit {
   getAllProduct() {
     this.api.getProduct()
       .subscribe({
-        next: (res) => {
+        next: (res:any) => {
           console.log(res);
           this.dataSource = new MatTableDataSource(res);
           this.dataSource.paginator = this.paginator;
@@ -51,7 +51,7 @@ export class AdminComponent implements OnInit {
     this.add.open(AddComponent, {
       width: "30%",
       data: row
-    }).afterClosed().subscribe(val => {
+    }).afterClosed().subscribe((val: string) => {
       if (val === 'update') {
         this.getAllProduct();
       }
@@ -61,7 +61,7 @@ export class AdminComponent implements OnInit {
   deleteProduct(id: number) {
     this.api.deleteProduct(id)
       .subscribe({
-        next: (res) => {
+        next: (res:any) => {
           alert("Product Delete Succesfully");
           this.getAllProduct();
         }, error: () => {

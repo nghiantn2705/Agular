@@ -43,10 +43,13 @@ import { GirlproductComponent } from './pages/girlproduct/girlproduct.component'
 
 
 
-import { MatDialogRef } from '@angular/material/dialog';
 
 
+
 import { MatDialogRef } from '@angular/material/dialog';
+import { CategoriesComponent } from './admin/categories/categories.component';
+import { AddcategoriesComponent } from './admin/addcategories/addcategories.component';
+
 
 // import { LoginComponent } from './pages/login/login.component';
 // import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -72,8 +75,8 @@ import { MatDialogRef } from '@angular/material/dialog';
     AllproductComponent,
     BoyproductComponent,
     GirlproductComponent,
-   
-
+   CategoriesComponent,
+   AddcategoriesComponent,
 
 
    

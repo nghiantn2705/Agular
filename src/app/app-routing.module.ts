@@ -11,13 +11,13 @@ import { LayoutAdminComponent } from './Layout/layout-admin/layout-admin.compone
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CardComponent } from './pages/card/card.component';
-import { RegisterComponent } from './pages/register/register.component';
 
 import { AllproductComponent } from './pages/allproduct/allproduct.component';
 import { BoyproductComponent } from './pages/boyproduct/boyproduct.component';
 import { GirlproductComponent } from './pages/girlproduct/girlproduct.component';
 
 import { RegisterComponent } from './pages/register/register.component';
+import { CategoriesComponent } from './admin/categories/categories.component';
 
 
 const routes: Routes = [
@@ -48,8 +48,9 @@ const routes: Routes = [
     path: 'admin',
     component: LayoutAdminComponent,
     children: [
-      { path: '', redirectTo: 'admin', pathMatch: 'full' },
-      { path: 'admin', component: AdminComponent },
+      { path: '', redirectTo: 'products', pathMatch: 'full' },
+      { path: 'products', component: AdminComponent },
+      { path: 'categories', component: CategoriesComponent }
     ],
   },
   { path: '**', component: NotfoundComponent },
