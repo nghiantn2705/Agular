@@ -14,10 +14,6 @@ export class HeaderComponent {
   constructor(private login: MatDialog, private api: LoginService) {
 
   }
-  openDialog() {
-    this.login.open(LoginComponent, {
-      width: '30%',
-    })
-  }
+
  
 }
