@@ -1,44 +1,44 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from '../auth.service';
 
-import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { LoginService } from 'src/app/admin/services/login.service';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
-export class RegisterComponent {
-  userForm !: FormGroup;
+export class RegisterComponent implements OnInit {
+  registerForm!: FormGroup;
 
-  constructor(private FormBuilder: FormBuilder,
-    private api: LoginService, 
-   @Inject(MAT_DIALOG_DATA) public editData: any,
-    private dialogRef: MatDialogRef<RegisterComponent>) { }
+  constructor(
+    private fb: FormBuilder,
+    private authService: AuthService
+  ) {}
 
-  ngOnInit(): void {
-    this.userForm = this.FormBuilder.group({
-      username: ['', Validators.required],
+  ngOnInit() {
+    this.registerForm = this.fb.group({
+      email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required],
-     
+      confirmPassword: ['', Validators.required]
+    }, {
+      validator: this.passwordMatchValidator
     });
-}
-registerUser() {
-  console.log(this.userForm.value);
-    if (this.userForm.valid) {
-      this.api.registerUser(this.userForm.value)
-        .subscribe({
-          next: (res) => {
-            alert("Product added succesfully");
-            this.userForm.reset();
-            this.dialogRef.close('save');
-          },
-          error: () => {
-            alert("Error while adding the product")
-          }
-        })
+  }
+
+  onSubmit() {
+    const email = this.registerForm.get('email')?.value;
+    const password = this.registerForm.get('password')?.value;
+    const confirmPassword = this.registerForm.get('confirmPassword')?.value;
+    if (email && password && confirmPassword) {
+      this.authService.register(email, password,confirmPassword).subscribe();
+      alert("Đăng kí thành công")
     }
-  } 
+  }
 
+  passwordMatchValidator(group: FormGroup) {
+    const password = group.get('password')?.value;
+    const confirmPassword = group.get('confirmPassword')?.value;
+
+    return password === confirmPassword ? null : { mismatch: true };
+  }
 }
-

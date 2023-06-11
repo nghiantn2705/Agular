@@ -36,10 +36,17 @@
         
               
             <!-- <mat-icon matBadge="16" matBadgeColor="warn"><i class="gg-shopping-cart"></i></mat-icon> -->
-            <button  class="user" (click)="openDialog()"><span class="material-icons">
-              person
-              </span></button>
+          
+              <div *ngIf="!authService.isLoggedIn">
+                <a  class="user" href="/login"><span class="material-icons">
+                    person
+                    </span></a>
+              </div>
               
+              <!-- Hiển thị nút Đăng Xuất nếu đã đăng nhập -->
+              <div *ngIf="authService.isLoggedIn">
+               <a class="user" routerLink="/logout" (click)="onLogOut()"><span>Đăng xuất</span></a>
+              </div>
            
         </div>
        

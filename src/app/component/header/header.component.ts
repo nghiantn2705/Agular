@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ApiService } from 'src/app/admin/services/api.service';
 import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { LoginService } from 'src/app/admin/services/login.service';
-
+import { AuthService } from '../../pages/auth.service';
 import { LoginComponent } from 'src/app/pages/login/login.component';
 
 @Component({
@@ -11,13 +11,11 @@ import { LoginComponent } from 'src/app/pages/login/login.component';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  constructor(private login: MatDialog, private api: LoginService) {
+  constructor(private login: MatDialog, private api: LoginService,public authService: AuthService) {
 
   }
-  openDialog() {
-    this.login.open(LoginComponent, {
-      width: '30%',
-    })
-  }
+onLogOut(): void {
+  this.authService.logout();
+}
  
 }
