@@ -14,20 +14,77 @@
   <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
   <button mat-raised-button color="accent" (click)="openDialog1()">Đăng ký</button>
 </form> -->
-<h1 mat-dialog-title> Đăng nhập</h1>
-<div mat-dialog-content>
-    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-        <mat-form-field appearance="outline">
-            <mat-label>Username</mat-label>
-            <input formControlName="username" matInput placeholder="Username ">
-        </mat-form-field>
-        <mat-form-field appearance="outline">
-            <mat-label>Password</mat-label>
-            <input formControlName="password"  type="password" matInput placeholder="Password">
-        </mat-form-field>
-    </form>
-</div>
-<div mat-dialog-actions [align]="'end'">
-  <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
-  <button mat-raised-button color="accent" (click)="openDialog1()">Đăng ký</button>
-</div>
+ <!-- <h1>Login</h1>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="email">Email</label>
+    <input type="email" id="email" formControlName="email">
+  </div>
+  <div>
+    <label for="password">Password</label>
+    <input type="password" id="password" formControlName="password">
+  </div>
+  <button type="submit">Login</button>
+
+</form>  -->
+
+<div class="overlay">
+  <!-- LOGN IN FORM by Omar Dsoky -->
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+     <!--   con = Container  for items in the form-->
+     <div class="con">
+     <!--     Start  header Content  -->
+     <header class="head-form">
+        <h2>Log In</h2>
+        <!--     A welcome message or an explanation of the login form -->
+   
+     </header>
+     <!--     End  header Content  -->
+     <br>
+     <div class="field-set">
+       
+        <!--   user name -->
+           <span class="input-item">
+             <i class="fa fa-user-circle"></i>
+           </span>
+          <!--   user name Input-->
+           <input class="form-input" id="email" type="email" formControlName="email" placeholder="@UserName" required>
+       
+        <br>
+       
+             <!--   Password -->
+       
+        <span class="input-item">
+          <i class="fa fa-key"></i>
+         </span>
+        <!--   Password Input-->
+        <input class="form-input" type="password" placeholder="Password" id="password" formControlName="password" required>
+       
+  <!--      Show/hide password  -->
+       
+       
+        <br>
+  <!--        buttons -->
+  <!--      button LogIn -->
+        <button class="log-in" type="submit"> Log In </button>
+     </div>
+    
+
+     <div class="other">
+  <!--      Forgot Password button-->
+        <button class="btn submits frgt-pass">Forgot Password</button>
+  <!--     Sign Up button -->
+  <a routerLink="/register"><button class="btn submits sign-up">Sign Up 
+    <!--         Sign Up font icon -->
+   
+          </button> </a>
+        
+  <!--      End Other the Division -->
+     </div>
+       
+  <!--   End Conrainer  -->
+    </div>
+    
+    <!-- End Form -->
+  </form>
+  </div>

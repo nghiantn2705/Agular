@@ -11,23 +11,33 @@ import { LayoutAdminComponent } from './Layout/layout-admin/layout-admin.compone
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CardComponent } from './pages/card/card.component';
+
 import { AllproductComponent } from './pages/allproduct/allproduct.component';
 import { BoyproductComponent } from './pages/boyproduct/boyproduct.component';
 import { GirlproductComponent } from './pages/girlproduct/girlproduct.component';
 
+import { RegisterComponent } from './pages/register/register.component';
+
+
 const routes: Routes = [
  {
-  path:"", component:LayoutClientComponent,children: [
+  path:"",
+  component:LayoutClientComponent,
+  children: [
     {path:"",redirectTo:'home',pathMatch:'full'},
     {path:'home',component:HomeComponent},
     {path:'detail/:_id',component:DeitalProductComponent},
     {path:'login',component:LoginComponent},
+    {path:'register',component:RegisterComponent},
     {path:'card',component:CardComponent},
+
     {path:'allproduct',component:AllproductComponent},
     {path:'boyproduct',component:BoyproductComponent},
     {path:'girlproduct',component:GirlproductComponent},
 
   
+
+    
     
     ],
   },

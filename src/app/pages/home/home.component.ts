@@ -16,7 +16,7 @@ export class HomeComponent {
     this.api.getProduct().subscribe({
       next: (res: any) => {
         if (Array.isArray(res) && res.length >= 5) {
-          this.products = res.slice(0, 8);
+          this.products = res.slice(0, 16);
         }
       },
       error: () => {

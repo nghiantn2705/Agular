@@ -123,42 +123,48 @@
     <h1>GIÀY NAM</h1>
     
     <div class="row">
-      <div class="col-3" *ngFor="let product of products | slice:0:8">
-        <div class="card" >
-          <a routerLink="/detail/{{product._id}}">
-            <div class="card-img-wrapper">
-              <img src="{{ product?.imgs[0] }}" alt="" class="card-img-top" />
-              <div class="card-price-overlay">
-                <h6 class="card-price">{{ product.price }}</h6>
+      <ng-container *ngFor="let product of  products | slice:0:16">
+        <!-- Các sản phẩm trong trang hiện tại -->
+        <div class="col-3" *ngIf="product.sex === 'Nam' ">
+          <div class="card" >
+            <a routerLink="/detail/{{ product._id }}">
+              <div class="card-img-wrapper">
+                <img src="{{ product?.imgs[0] }}" alt="" class="card-img-top" />
+                <div class="card-price-overlay">
+                  <h6 class="card-price">{{ product.price }}</h6>
+                </div>
               </div>
-            </div>
-            <div class="card-body">
-              <p class="card-title">{{ product.brand }}</p>
-              <p class="card-name">{{ product.name }}</p>
-            </div>
-          </a>
+              <div class="card-body">
+                <p class="card-title">{{ product.brand }}</p>
+                <p class="card-name">{{ product.name }}</p>
+              </div>
+            </a>
+          </div>
         </div>
-      </div>
+      </ng-container>
     </div>
     <h1>GIÀY NỮ</h1>
-    <div class="row">
-      <div class="col-3" *ngFor="let product of products | slice:0:8">
-        <div class="card">
-          <a routerLink="/detail/{{product._id}}">
-            <div class="card-img-wrapper">
-              <img src="{{ product.img }}" alt="" class="card-img-top" />
-              <div class="card-price-overlay">
-                <h6 class="card-price">{{ product.price }}</h6>
+    <div class="row" >
+      <ng-container *ngFor="let product of  products | slice:0:16">
+        <!-- Các sản phẩm trong trang hiện tại -->
+        <div class="col-3" *ngIf="product.sex === 'Nữ' ">
+          <div class="card" >
+            <a routerLink="/detail/{{ product._id }}">
+              <div class="card-img-wrapper">
+                <img src="{{ product?.imgs[0] }}" alt="" class="card-img-top" />
+                <div class="card-price-overlay">
+                  <h6 class="card-price">{{ product.price }}</h6>
+                </div>
               </div>
-            </div>
-            <div class="card-body">
-              <p class="card-title">{{ product.band }}</p>
-              <p class="card-name">{{ product.name }}</p>
-            </div>
-          </a>
+              <div class="card-body">
+                <p class="card-title">{{ product.brand }}</p>
+                <p class="card-name">{{ product.name }}</p>
+              </div>
+            </a>
+          </div>
         </div>
+      </ng-container>
       </div>
-    </div>
   </div>
   <!-- <div class="hailong">
    <div>
