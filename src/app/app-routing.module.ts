@@ -15,7 +15,9 @@ import { RegisterComponent } from './pages/register/register.component';
 
 const routes: Routes = [
  {
-  path:"", component:LayoutClientComponent,children: [
+  path:"",
+  component:LayoutClientComponent,
+  children: [
     {path:"",redirectTo:'home',pathMatch:'full'},
     {path:'home',component:HomeComponent},
     {path:'detail/:_id',component:DeitalProductComponent},
