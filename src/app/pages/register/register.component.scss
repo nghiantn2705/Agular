@@ -41,7 +41,7 @@ form {
     margin: 2% auto;
     box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
     padding: 2%;
-    background-image: linear-gradient(-225deg, #E3FDF5 50%, #FFE6FA 50%);
+    background-image: linear-gradient(-225deg, #cdd1f3 50%, #e0bae5 50%);
 }
 /* form Container */
 form .con {
@@ -123,7 +123,7 @@ input[class="form-input"]{
     transition: 0.2s linear;
     
 }
-input[id="email"] {width: 240px;
+input[id="email"] {width: 300px;
   height: 50px;
 
   margin-top: 2%;
@@ -136,9 +136,9 @@ input[id="email"] {width: 240px;
   outline: none;
   border: none;
 
-  border-radius: 0px 5px 5px 0px;
+  border-radius: 5px 5px 5px 5px;
   transition: 0.2s linear;}
-  input[id="password"] {width: 240px;
+  input[id="password"] {width: 300px;
     height: 50px;
   
     margin-top: 2%;
@@ -151,9 +151,9 @@ input[id="email"] {width: 240px;
     outline: none;
     border: none;
   
-    border-radius: 0px 5px 5px 0px;
+    border-radius: 5px 5px 5px 5px;
     transition: 0.2s linear;}
-    input[id="confirmPassword"] {width: 240px;
+    input[id="confirmPassword"] {width: 300px;
       height: 50px;
     
       margin-top: 2%;
@@ -166,13 +166,10 @@ input[id="email"] {width: 240px;
       outline: none;
       border: none;
     
-      border-radius: 0px 5px 5px 0px;
+      border-radius: 5px 5px 5px 5px;
       transition: 0.2s linear;}
 /* focus  */
-input:focus {
-    transform: translateX(-2px);
-    border-radius: 5px;
-}
+
 
 /* //////////////////////////////////////////// */
 /* //////////////////////////////////////////// */
@@ -183,7 +180,7 @@ button {
     display: inline-block;
     color: #252537;
   
-    width: 280px;
+    width: 300px;
     height: 50px;
   
     padding: 0 20px;

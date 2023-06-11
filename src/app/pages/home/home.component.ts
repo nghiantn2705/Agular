@@ -15,14 +15,15 @@ export class HomeComponent {
   getAllProduct() {
     this.api.getProduct().subscribe({
       next: (res: any) => {
-        if (Array.isArray(res) && res.length >= 5) {
-          this.products = res.slice(0, 16);
-        }
+        
+          this.products = res
+        
       },
       error: () => {
         alert('Error while fetching the Records!...');
       },
     });
   }
+  
   
 }

@@ -27,8 +27,15 @@ export class LoginComponent implements OnInit {
     const email = this.loginForm.get('email')?.value;
     const password = this.loginForm.get('password')?.value;
     if (email && password) {
-      this.authService.login(email, password).subscribe();
-     alert("Bạn đã đăng nhập thành công")
+      this.authService.login(email, password).subscribe(
+        () => {
+          alert("Bạn đã đăng nhập thành công");
+        },
+        (error) => {
+          alert("Đăng nhập thất bại! Vui lòng kiểm tra lại thông tin đăng nhập.");
+        }
+      );
+
    
     
   
