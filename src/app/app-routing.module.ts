@@ -13,6 +13,13 @@ import { LoginComponent } from './pages/login/login.component';
 import { CardComponent } from './pages/card/card.component';
 import { RegisterComponent } from './pages/register/register.component';
 
+import { AllproductComponent } from './pages/allproduct/allproduct.component';
+import { BoyproductComponent } from './pages/boyproduct/boyproduct.component';
+import { GirlproductComponent } from './pages/girlproduct/girlproduct.component';
+
+import { RegisterComponent } from './pages/register/register.component';
+
+
 const routes: Routes = [
  {
   path:"",
@@ -24,6 +31,15 @@ const routes: Routes = [
     {path:'login',component:LoginComponent},
     {path:'register',component:RegisterComponent},
     {path:'card',component:CardComponent},
+
+
+    {path:'allproduct',component:AllproductComponent},
+    {path:'boyproduct',component:BoyproductComponent},
+    {path:'girlproduct',component:GirlproductComponent},
+
+  
+
+
     
     
     ],

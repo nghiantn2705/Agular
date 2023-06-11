@@ -35,7 +35,19 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { UsersComponent } from './admin/users/users.component';
 import { DeitalProductComponent } from './pages/deital-product/deital-product.component';
 import { CardComponent } from './pages/card/card.component';
+
+
+import { AllproductComponent } from './pages/allproduct/allproduct.component';
+import { BoyproductComponent } from './pages/boyproduct/boyproduct.component';
+import { GirlproductComponent } from './pages/girlproduct/girlproduct.component';
+
+
+
 import { MatDialogRef } from '@angular/material/dialog';
+
+
+import { MatDialogRef } from '@angular/material/dialog';
+
 // import { LoginComponent } from './pages/login/login.component';
 // import { NotFoundComponent } from './pages/not-found/not-found.component';
 // import { RegisterComponent } from './pages/register/register.component';
@@ -57,6 +69,10 @@ import { MatDialogRef } from '@angular/material/dialog';
     UsersComponent,
     DeitalProductComponent,
     CardComponent,
+    AllproductComponent,
+    BoyproductComponent,
+    GirlproductComponent,
+   
 
 
 
